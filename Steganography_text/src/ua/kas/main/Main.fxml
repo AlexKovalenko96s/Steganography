@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="500.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ua.kas.main.Controller">
+   <children>
+      <Separator layoutX="50.0" layoutY="237.0" prefHeight="3.0" prefWidth="400.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="248.5" />
+      <ImageView fx:id="iv_encryption" fitHeight="150.0" fitWidth="200.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" />
+      <Button layoutX="234.0" layoutY="180.0" mnemonicParsing="false" onAction="#encryption" prefHeight="58.0" prefWidth="152.0" text="Run" />
+      <TextArea fx:id="ta_encryption" layoutX="234.0" layoutY="14.0" prefHeight="150.0" prefWidth="152.0" />
+      <Button layoutX="14.0" layoutY="180.0" mnemonicParsing="false" onAction="#selectEcryptionImage" prefHeight="25.0" prefWidth="90.0" text="SelectImage" />
+      <Label fx:id="l_encryption" alignment="CENTER" layoutX="14.0" layoutY="213.0" prefHeight="25.0" prefWidth="200.0" text="Works!" textAlignment="CENTER" textFill="#00ff2a" visible="false" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="213.0" />
+      <Button layoutX="124.0" layoutY="180.0" mnemonicParsing="false" onAction="#selectEcryptionSave" prefHeight="25.0" prefWidth="90.0" text="SelectSave" />
+      <Label fx:id="l_encryptionFail" alignment="CENTER" layoutX="24.0" layoutY="223.0" prefHeight="25.0" prefWidth="200.0" text="Fail!" textAlignment="CENTER" textFill="RED" visible="false" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="213.0" />
+      <ImageView fx:id="iv_decoding" fitHeight="150.0" fitWidth="200.0" layoutX="14.0" layoutY="262.0" pickOnBounds="true" preserveRatio="true" />
+      <Button layoutX="234.0" layoutY="428.0" mnemonicParsing="false" onAction="#decoding" prefHeight="58.0" prefWidth="152.0" text="Run" />
+      <TextArea fx:id="ta_decoding" layoutX="234.0" layoutY="262.0" prefHeight="150.0" prefWidth="152.0" />
+      <Button layoutX="14.0" layoutY="428.0" mnemonicParsing="false" onAction="#selectDecodingImage" prefHeight="25.0" prefWidth="200.0" text="SelectImage" />
+      <Label layoutX="6.0" layoutY="469.0" text="© Тетяна Майструк" />
+   </children>
+</AnchorPane>
