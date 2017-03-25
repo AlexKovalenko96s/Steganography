@@ -191,6 +191,9 @@ public class Controller {
 				decoding += tempG.substring(tempG.length() - 1);
 			}
 		}
+		System.out.println(decoding.substring(decoding.indexOf("11111111111111111111") + 20,
+				decoding.lastIndexOf("11111111111111111111")));
+
 		decoding = decoding.substring(decoding.indexOf("11111111111111111111") + 20);
 		decoding = decoding.substring(0, decoding.indexOf("11111111111111111111"));
 

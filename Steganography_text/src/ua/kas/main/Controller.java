@@ -68,8 +68,8 @@ public class Controller {
 
 	public void encryption() throws IOException {
 		String text = ta_encryption.getText();
-		String binary = "11111111111111111111" + new BigInteger(text.getBytes("UTF-8")).toString(2)
-				+ "11111111111111111111";
+		String binary = new BigInteger(text.getBytes("UTF-8")).toString(2)
+				+ new BigInteger("end".getBytes("UTF-8")).toString(2);
 
 		System.out.println(new BigInteger(text.getBytes("UTF-8")).toString(2));
 
@@ -146,8 +146,7 @@ public class Controller {
 			}
 		}
 
-		decoding = decoding.substring(decoding.indexOf("11111111111111111111") + 20);
-		decoding = decoding.substring(0, decoding.indexOf("11111111111111111111"));
+		decoding = decoding.substring(0, decoding.indexOf("11001010110111001100100"));
 
 		String out = new String(new BigInteger(decoding, 2).toByteArray());
 
